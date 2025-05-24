@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Alrededor de Estados Unidos" />
+    <meta name="author" content="Gabriela Amaya" />
+    <meta name="keywords" content="html, css" />
+    <title>Alrededor de Estados Unidos</title>
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="stylesheet" href="./pages/index.css" />
+    <link rel="stylesheet" href="./vendor/fonts.css" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="header">
+        <img
+          src="./images/Vector.png"
+          alt="Around the U.S."
+          class="header__logo"
+        />
+        <img
+          src="./images/Line.png"
+          alt="Linea divisoria"
+          class="header__Line"
+        />
+      </header>
+      <main class="content">
+        <div class="profile">
+          <section class="profiles__image">
+            <img
+              src="./images/Imagen22.jpeg"
+              alt="foto de perfil"
+              class="profile__image-avatar"
+            />
+          </section>
+          <section class="profile__info">
+            <h1 class="profile__name">Gabriela Amaya</h1>
+            <p class="profile__job">Estutiante</p>
+          </section>
+          <button class="profile__button-edit"></button>
+          <button class="profile__button-plus">+</button>
+          <div class="popup popup_open">
+            <div class="popup__container">
+              <button class="popup__close"></button>
+              <form class="popup__form" invalid>
+                <label class="popup__title">Editar perfil</label>
+                <input
+                  type="text"
+                  class="popup__name"
+                  id="inputname"
+                  name="inputname"
+                  placeholder="Nombre"
+                  maxlength="40"
+                  minlength="2"
+                  required
+                />
+                <input
+                  type="text"
+                  class="popup__job"
+                  name="inputjob"
+                  id="inputjob"
+                  placeholder="Acerca de mi"
+                  maxlength="200"
+                  minlength="2"
+                  required
+                />
+                <button
+                  class="popup__save popup__save_disabled"
+                  type="submit"
+                  disabled
+                >
+                  Guardar
+                </button>
+              </form>
+            </div>
+          </div>
+          <div class="popup place-popup popup_open-card">
+            <div class="place-popup__container">
+              <button class="place-popup__close"></button>
+              <form class="place-popup__form" novalidate>
+                <label class="popup__title">Nuevo lugar</label>
+                <input
+                  type="text"
+                  class="popup__name"
+                  id="inputtitle"
+                  name="inputtitle"
+                  placeholder="Titulo"
+                  maxlength="30"
+                  min="2"
+                  required
+                />
+                <input
+                  type="url"
+                  class="popup__job"
+                  id="inputphoto"
+                  name="inputphoto"
+                  placeholder="Enlace de la imagen"
+                  required
+                />
+                <button
+                  class="popup__create popup__create_disabled"
+                  type="submit"
+                >
+                  Crear
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="gallery">
+          <div class="newcards"></div>
+
+          <div class="gallery__photos">
+            <img class="gallery__photos-card" src="./images/1.jpg" alt="Foto" />
+            <button class="gallery__trash" type="button"></button>
+            <div class="gallery__photos-name">
+              Valle de Yosemite
+              <button class="gallery__photo-like" type="button"></button>
+            </div>
+          </div>
+
+          <div class="gallery__photos">
+            <img class="gallery__photos-card" src="./images/2.jpg" alt="Foto" />
+            <button class="gallery__trash" type="button"></button>
+            <div class="gallery__photos-name">
+              Lago Louise
+              <button class="gallery__photo-like" type="button"></button>
+            </div>
+          </div>
+
+          <div class="gallery__photos">
+            <img class="gallery__photos-card" src="./images/3.jpg" alt="Foto" />
+            <button class="gallery__trash" type="button"></button>
+            <div class="gallery__photos-name">
+              Montañas Clavas
+              <button class="gallery__photo-like" type="button"></button>
+            </div>
+          </div>
+
+          <div class="gallery__photos">
+            <img class="gallery__photos-card" src="./images/4.jpg" alt="Foto" />
+            <button class="gallery__trash" type="button"></button>
+            <div class="gallery__photos-name">
+              Latemar
+              <button class="gallery__photo-like" type="button"></button>
+            </div>
+          </div>
+
+          <div class="gallery__photos">
+            <img class="gallery__photos-card" src="./images/5.jpg" alt="Foto" />
+            <button class="gallery__trash" type="button"></button>
+            <div class="gallery__photos-name">
+              Vanoise National Park
+              <button class="gallery__photo-like" type="button"></button>
+            </div>
+          </div>
+          <div class="gallery__photos">
+            <img class="gallery__photos-card" src="./images/6.jpg" alt="Foto" />
+            <button class="gallery__trash" type="button"></button>
+            <div class="gallery__photos-name">
+              Lago di Braies
+              <button class="gallery__photo-like" type="button"></button>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer class="footer">
+        <p class="footer__copyright">&#x00a9; 2025 Around The U.S.</p>
+      </footer>
+    </div>
+    <template id="template">
+      <div class="gallery__photos">
+        <img class="gallery__photo-card" src="" alt="fotografía" />
+        <button type="button" class="gallery__trash"></button>
+        <div class="gallery__photo-name">
+          <span class="title"></span>
+          <button type="button" class="gallery__photo-like"></button>
+        </div>
+      </div>
+    </template>
+
+    <div class="popup-img">
+      <div class="popup-img__content">
+        <button class="popup-img__close"></button>
+        <img
+          id="popup-img"
+          class="popup-img__image"
+          src=""
+          alt="Vista ampliada"
+        />
+      </div>
+    </div>
+
+    <script src="./scripts/index.js"></script>
+  </body>
+</html>
