@@ -43,7 +43,7 @@
           <div class="popup popup_open">
             <div class="popup__container">
               <button class="popup__close"></button>
-              <form class="popup__form" invalid>
+              <form class="popup__form">
                 <label class="popup__title">Editar perfil</label>
                 <input
                   type="text"
@@ -87,7 +87,7 @@
                   name="inputtitle"
                   placeholder="Titulo"
                   maxlength="30"
-                  min="2"
+                  minlength="2"
                   required
                 />
                 <input
@@ -183,12 +183,6 @@
     <div class="popup-img">
       <div class="popup-img__content">
         <button class="popup-img__close"></button>
-        <img
-          id="popup-img"
-          class="popup-img__image"
-          src=""
-          alt="Vista ampliada"
-        />
       </div>
     </div>
 
