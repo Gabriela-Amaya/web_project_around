@@ -1,19 +1,20 @@
 .footer {
   background-color: black;
   width: 880px;
-  margin: 60px auto;
+  margin-top: 60px;
+  padding-left: 200px;
 }
 
 .footer__copyright {
   display: flex;
-  justify-content: flex-start;
+  justify-content: start;
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 22px;
   color: #545454;
-  margin: auto;
+
   padding-top: 67px;
   margin-top: 250px;
 }
@@ -23,6 +24,7 @@
     max-width: 290px;
     padding: 0;
     margin-top: 500px;
+    margin-left: 20px;
   }
 
   .footer__copyright {

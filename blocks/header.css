@@ -1,6 +1,6 @@
 .header {
   padding-top: 45px;
-  margin-left: 200px;
+  margin-left: 325px;
   max-width: 880px;
 }
 
@@ -15,7 +15,7 @@
     margin-left: 20px;
   }
 
-  .header__line {
+  .header__linee {
     max-width: 282px;
     width: 100%;
   }

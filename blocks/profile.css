@@ -20,6 +20,7 @@
   font-size: 45px;
   text-overflow: ellipsis;
   white-space: nowrap;
+  flex-direction: row;
 }
 
 .profile__job {
@@ -28,6 +29,7 @@
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
+  flex-direction: row;
 }
 
 .profile__button-edit {
