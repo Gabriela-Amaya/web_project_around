@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Alrededor de Estados Unidos" />
     <meta name="author" content="Gabriela Amaya" />
-    <meta name="keywords" content="html, css" />
+    <meta name="keywords" content="html, css,js" />
     <title>Alrededor de Estados Unidos</title>
-    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="shortcut ico" href="favicon.ico" />
     <link rel="stylesheet" href="./pages/index.css" />
     <link rel="stylesheet" href="./vendor/fonts.css" />
   </head>
@@ -40,51 +40,51 @@
           </section>
           <button class="profile__button-edit"></button>
           <button class="profile__button-plus">+</button>
-          <div class="profile__popup">
-            <div class="popup popup__profile">
-              <div class="popup__overlay"></div>
 
-              <div class="popup__container">
-                <button class="popup__close">x</button>
-                <div class="popup__body">
-                  <form class="popup__form">
-                    <label class="popup__title">Editar perfil</label>
-                    <input
-                      type="text"
-                      class="form__input form__input_name"
-                      id="inputname"
-                      name="inputname"
-                      placeholder="Nombre"
-                      maxlength="40"
-                      minlength="2"
-                      required
-                    />
-                    <input
-                      type="text"
-                      class="form__input form__input_job"
-                      name="inputjob"
-                      id="inputjob"
-                      placeholder="Acerca de mi"
-                      maxlength="200"
-                      minlength="2"
-                      required
-                    />
-                    <button class="popup__save" type="submit" id="Guardar">
-                      Guardar
-                    </button>
-                  </form>
-                </div>
+          <div class="profile__popup profile__popup-pop">
+            <div class="profile__overlay"></div>
+            <div class="profile__container">
+              <button class="profile__close">x</button>
+              <div class="profile__body">
+                <form class="profile__form">
+                  <label class="profile__title">Editar perfil</label>
+                  <input
+                    type="text"
+                    class="profile__input profile__input-name"
+                    id="inputname"
+                    name="inputname"
+                    placeholder="Nombre"
+                    maxlength="40"
+                    minlength="2"
+                    required
+                  />
+                  <input
+                    type="text"
+                    class="profile__input profile__input-job"
+                    name="inputjob"
+                    id="inputjob"
+                    placeholder="Acerca de mi"
+                    maxlength="200"
+                    minlength="2"
+                    required
+                  />
+                  <button class="profile__save" type="submit" id="Guardar">
+                    Guardar
+                  </button>
+                </form>
               </div>
             </div>
           </div>
-          <div class="popup place-popup popup_open-card">
-            <div class="place-popup__container">
-              <button class="place-popup__close"></button>
-              <form class="place-popup__form" novalidate>
-                <label class="popup__title">Nuevo lugar</label>
+
+          <div class="profile__place place-popup popup_open-card">
+            <div class="profile__place-container">
+              <button class="profile__place-close"></button>
+
+              <form class="profile__place-form" novalidate>
+                <label class="profile__place-title">Nuevo lugar</label>
                 <input
                   type="text"
-                  class="popup__name"
+                  class="profile__place-name"
                   id="inputtitle"
                   name="inputtitle"
                   placeholder="Titulo"
@@ -94,17 +94,18 @@
                 />
                 <input
                   type="url"
-                  class="popup__job"
+                  class="profile__place-job"
                   id="inputphoto"
                   name="inputphoto"
                   placeholder="Enlace de la imagen"
                   required
                 />
-                <button class="popup__create" type="submit">Crear</button>
+                <button class="profile__create" type="submit">Crear</button>
               </form>
             </div>
           </div>
         </div>
+
         <div class="gallery">
           <div class="newcards"></div>
 
@@ -180,7 +181,7 @@
     <div class="popup-img">
       <div class="popup-img__content">
         <button class="popup-img__close"></button>
-        <img src="./images/Close Icon.png" alt="Cerrar" id="popup-img" />
+        <img src="./images/Close-Icon.png" alt="Cerrar" id="popup-img" />
       </div>
     </div>
 

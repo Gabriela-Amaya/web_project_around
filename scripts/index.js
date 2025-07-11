@@ -1,11 +1,11 @@
 const textName = document.querySelector(".profile__name");
 const textJob = document.querySelector(".profile__job");
-const inputName = document.querySelector(".form__input_name");
-const inputJob = document.querySelector(".form__input_job");
-const form = document.querySelector(".popup__form");
+const inputName = document.querySelector(".profile__input_name");
+const inputJob = document.querySelector(".profile__input_job");
+const form = document.querySelector(".profile__form");
 const editButton = document.querySelector(".profile__button-edit");
-const popupProfile = document.querySelector(".popup__profile");
-const popupClose = document.querySelector(".popup__close");
+const popupProfile = document.querySelector(".profile__popup-pop");
+const popupClose = document.querySelector(".profile__close");
 
 form.addEventListener("submit", function (event) {
   event.preventDefault();
