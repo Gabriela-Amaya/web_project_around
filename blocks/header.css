@@ -1,7 +1,7 @@
 .header {
   padding-top: 45px;
   margin-left: 325px;
-  max-width: 880px;
+  max-width: 895px;
 }
 
 .header__line {
@@ -29,6 +29,13 @@
 
 @media screen and (min-width: 545px) and (max-width: 1024px) {
   .header {
-    max-width: 1280px;
+    max-width: 768px;
+    padding-left: 70px;
+    margin-left: 0;
+  }
+
+  .header__linee {
+    max-width: 768px;
+    width: 90%;
   }
 }

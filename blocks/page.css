@@ -13,5 +13,6 @@ body {
   .page {
     min-width: 320px;
     max-width: 768px;
+    overflow-x: hidden;
   }
 }

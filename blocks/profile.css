@@ -58,7 +58,7 @@
   border: 2px solid #fff;
   width: 100px;
   height: 35px;
-  margin: 0 0 14px 165px;
+  margin: 0 0 14px 120px;
   cursor: pointer;
   font-size: 30px;
 }
@@ -350,5 +350,24 @@
   .profile__container {
     width: 0;
     background-color: #000;
+  }
+}
+
+@media screen and (min-width: 545px) and (max-width: 1024px) {
+  .profile__body {
+  }
+
+  .profile__form {
+    display: flex;
+    justify-content: center;
+  }
+  .profile__close {
+    margin-bottom: 0;
+  }
+
+  .profile__container {
+    display: flex;
+    justify-content: center;
+    margin-right: -80px;
   }
 }
