@@ -402,6 +402,16 @@
   background-color: black;
 }
 
+.profile__input_error {
+  border: 2px solid red;
+}
+
+.inputname-error,
+.inputjob-error {
+  color: red;
+  font-size: 12px;
+}
+
 /*
 .profile__place-container {
   background-color: #ffff;

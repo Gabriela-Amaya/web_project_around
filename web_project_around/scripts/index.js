@@ -19,6 +19,10 @@ const popupAddClose = popupAddCard.querySelector(".profile__place-close");
 const popupImage = document.querySelector(".popup_image");
 const popupImageClose = popupImage.querySelector(".popup__close-button");
 
+const profileOverlay = document.querySelectorAll(".profile__overlay");
+const placeOverlay = document.querySelectorAll(".profile__place-overlay");
+const popupOverlay = document.querySelectorAll(".popup__overlay");
+
 form.addEventListener("submit", function (event) {
   event.preventDefault();
   textName.textContent = inputName.value;
@@ -121,3 +125,36 @@ function createElement(name, link) {
 
   return cardNode;
 }
+
+//profile__overlay         const profileOverlay = document.querySelectorAll(".profile__overlay");
+profileOverlay.forEach(function (overlay) {
+  overlay.addEventListener("click", function () {
+    const profile = overlay.closest(".popup");
+    popupProfile.classList.remove("popup_open");
+  });
+});
+
+//profile__place-overlay    const placeOverlay = document.querySelectorAll(".profile__place-overlay");
+
+placeOverlay.forEach(function (overlay) {
+  overlay.addEventListener("click", function () {
+    const place = overlay.closest(".popup");
+    popupAddCard.classList.remove("popup_open");
+  });
+});
+
+//popup__overlay    const popupOverlay = document.querySelectorAll(".popup__overlay");
+popupOverlay.forEach(function (overlay) {
+  overlay.addEventListener("click", function () {
+    const popup = overlay.closest(".popup");
+    popupImage.classList.remove("popup_open");
+  });
+});
+
+document.addEventListener("keydown", function (event) {
+  console.log(event.key);
+  if (event.key === "Escape") {
+    const popup = document.querySelector(".popup_open");
+    popup.classList.remove("popup_open");
+  }
+});
