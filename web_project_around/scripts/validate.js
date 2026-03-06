@@ -21,6 +21,29 @@ inputList.forEach(function (inputElement) {
   });
 });
 
+const inputListt = Array.from(document.querySelectorAll(".profile__placee"));
+const submitButtonn = document.querySelector(".profile__create");
+
+function isInvalidInputs(inputs) {
+  return inputs.some((input) => !input.validity.valid);
+}
+
+inputListt.forEach(function (inputElement) {
+  inputElement.addEventListener("input", function () {
+    const spanNode = document.querySelector(`.${inputElement.name}-error`);
+
+    if (!inputElement.validity.valid) {
+      inputElement.classList.add("profile__place_error");
+      spanNode.textContent = inputElement.validationMessage;
+    } else {
+      inputElement.classList.remove("profile__place_error");
+      spanNode.textContent = "";
+    }
+
+    submitButtonn.disabled = isInvalidInputs(inputListt);
+  });
+});
+
 /*/*const form = document.forms.superHeroe;
 const inputs = form.querySelectorAll(".form__input, .form__textarea");
 const submitButton = form.querySelector(".form__button--submit");

@@ -342,6 +342,8 @@
   color: #000;
   margin-left: 10px;
 }
+
+/*profile__place-name*/
 .profile__place-name {
   display: flex;
   flex-direction: row-reverse;
@@ -360,6 +362,7 @@
   width: 100%;
 }
 
+/*.profile__place-link */
 .profile__place-link {
   display: flex;
   flex-direction: row-reverse;
@@ -408,6 +411,16 @@
 
 .inputname-error,
 .inputjob-error {
+  color: red;
+  font-size: 12px;
+}
+
+.profile__place_error {
+  border: 2px solid red;
+}
+
+.inputtitle-error,
+.inputphoto-error {
   color: red;
   font-size: 12px;
 }
