@@ -35,7 +35,7 @@
 
 .profile__button-edit {
   background: none;
-  background-image: url(/images/Vector3.png);
+  background-image: url(/web_project_around/images/Vector3.png);
   background-size: 10px;
   border: 1px solid #fff;
   width: 24px;
@@ -112,7 +112,7 @@
 .profile__close {
   position: absolute;
   background: none;
-  background-image: url(/images/Close\ Icon.png);
+  background-image: url(/web_project_around/images/Close\ Icon.png);
   background-size: 40px;
   background-repeat: no-repeat;
   background-position: center;
@@ -276,7 +276,7 @@
 .profile__place-close {
   position: absolute;
   background: none;
-  background-image: url(/images/Close\ Icon.png);
+  background-image: url(/web_project_around/images/Close\ Icon.png);
   background-size: 40px;
   background-repeat: no-repeat;
   background-position: center;

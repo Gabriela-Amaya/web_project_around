@@ -69,7 +69,7 @@
 
 .gallery__photo-like {
   background: none;
-  background-image: url(/images/corazon.jpg);
+  background-image: url(../images/corazon.jpg);
   background-repeat: no-repeat;
   background-color: #fff;
   background-position: center;
@@ -82,7 +82,7 @@
 }
 
 .gallery__photo-liked {
-  background-image: url(/images/corazon.jpg);
+  background-image: url(../images/corazon.jpg);
 }
 .gallery__photo-text {
   color: #000;
@@ -100,15 +100,9 @@
 }
 
 .gallery__like_active {
-  background-image: url(/images/corazon-negro.png);
+  background-image: url(/web_project_around/images/corazon-negro.png);
   background-color: white;
 }
-
-.gallery__photo-like_active {
-  background-image: url(/images/corazon-negro.png);
-  background-color: white;
-}
-
 /*
 @media screen and (max-width: 584px) and (max-width: 1280px) {
   .gallery {

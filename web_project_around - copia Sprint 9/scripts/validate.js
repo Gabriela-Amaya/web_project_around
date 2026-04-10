@@ -44,12 +44,6 @@ inputListt.forEach(function (inputElement) {
   });
 });
 
-const cofig = {
-  formSelector: ".form",
-  inputSelector: ".form__input",
-  submitSelector: ".popup__",
-};
-
 /*/*const form = document.forms.superHeroe;
 const inputs = form.querySelectorAll(".form__input, .form__textarea");
 const submitButton = form.querySelector(".form__button--submit");
