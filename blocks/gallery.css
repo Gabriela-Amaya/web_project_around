@@ -77,21 +77,15 @@
   cursor: pointer;
 }
 
-.gallery__photo-liked {
+.gallery__photo-like {
   background-image: url(/images/corazon.jpg);
 }
 
 .gallery__photo-like:hover {
   color: #000;
-  background-image: url(/images/corazon.jpg);
+  background-image: url(/images/corazon-negro.png);
 }
-/*
-@media screen and (max-width: 584px) and (max-width: 1280px) {
-  .gallery {
-    max-width: 1280px;
-  }
-}
-*/
+
 @media screen and (min-width: 320px) and (max-width: 584px) {
   .gallery {
     max-width: 290px;

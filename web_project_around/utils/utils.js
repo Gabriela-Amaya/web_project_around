@@ -1,4 +1,6 @@
-//import Card from "../scripts/components/Card";
+import PopupWithImage from "../components/PopupWithImage.js";
+import Popup from "../Popup.js";
+import Card from "./components/Card.js";
 
 const words = [
   {
@@ -41,6 +43,16 @@ const popupCloseButtons = Array.from(
   document.querySelectorAll(".popup__close"),
 );
 
+const popupImageObj = new PopupWithImage(".popup_image");
+function createCard(name, link) {
+  const card = new Card(name, link, ".template", {
+    handleCardImageClick: (nameCard, linkCard) => {
+      popupImageObj.open(nameCard, linkCard);
+    },
+  });
+  return card.render();
+}
+/*
 //  FUNCIONES
 function openPopup(popup) {
   popup.classList.add("popup_open");
@@ -65,14 +77,14 @@ popupCloseButtons.forEach((button) => {
     closePopup(popup);
   });
 });
-
+*/
 // EXPORTS
 export {
   words,
   areaCards,
-  openPopup,
-  closePopup,
-  openImagePopup,
+  //openPopup,
+  //closePopup,
+  //openImagePopup,
   profileEditButton,
   imageAddButton,
   popupProfile,
