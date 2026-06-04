@@ -9,6 +9,24 @@
   padding-right: 50px;
   width: 150px;
   height: 150px;
+  border-radius: 50px;
+}
+
+.profile__containerr {
+  background-color: #ffff;
+  width: 430px;
+  height: 160px;
+  border-radius: 20px;
+  position: absolute;
+  top: 20%;
+  right: 40%;
+  display: flex;
+  flex-direction: row;
+  max-width: 300px;
+  width: 430px;
+  z-index: 1;
+  justify-content: center;
+  align-items: center;
 }
 
 .profile__info {
@@ -423,6 +441,27 @@
 .inputphoto-error {
   color: red;
   font-size: 12px;
+}
+
+.profile__image {
+  position: relative;
+}
+
+.profile__avatar-edit {
+  width: 100%;
+  height: 100%;
+  border: none;
+  background: rgba(0, 0, 0, 0.8) url("../images/Vector3.png") center no-repeat;
+  background-size: 26px 26px;
+  cursor: pointer;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.profile__image:hover .profile__avatar-edit {
+  opacity: 1;
 }
 
 /*

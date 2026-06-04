@@ -1,4 +1,27 @@
 export default class UserInfo {
+  constructor(nameSelector, aboutSelector, avatarSelector) {
+    this._nameNode = document.querySelector(nameSelector);
+    this._aboutNode = document.querySelector(aboutSelector);
+    this._avatarNode = document.querySelector(avatarSelector);
+  }
+
+  getUserInfo() {
+    return {
+      name: this._nameNode.textContent,
+      about: this._aboutNode.textContent,
+    };
+  }
+
+  setUserInfo({ name, about }) {
+    this._nameNode.textContent = name;
+    this._aboutNode.textContent = about;
+  }
+
+  setUserAvatar(avatar) {
+    this._avatarNode.src = avatar;
+  }
+}
+/*export default class UserInfo {
   constructor(nameSelector, aboutSelector) {
     this._nameNode = document.querySelector(nameSelector);
 
@@ -18,3 +41,4 @@ export default class UserInfo {
     this._aboutNode.textContent = about;
   }
 }
+*/

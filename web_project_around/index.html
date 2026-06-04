@@ -33,6 +33,7 @@
               alt="foto de perfil"
               class="profile__image-avatar"
             />
+            <button class="profile__avatar-edit" type="button"></button>
           </section>
           <section class="profile__info">
             <h1 class="profile__name">Gabriela Amaya</h1>
@@ -199,8 +200,39 @@
         <img src="./images/Close-Icon.png" alt="Cerrar" id="popup-img" />
       </div>
     </div>
+    <div class="profile__popup popup-avatar">
+      <div class="profile__overlay"></div>
 
+      <div class="profile__container">
+        <button class="profile__close"></button>
+
+        <form class="profile__form profile__avatar-form">
+          <label class="profile__title"> Cambiar foto de perfil </label>
+
+          <input
+            type="url"
+            class="profile__input"
+            name="avatar"
+            placeholder="URL de la imagen"
+            required
+          />
+
+          <button class="profile__save" type="submit">Guardar</button>
+        </form>
+      </div>
+    </div>
     <script type="module" src="scripts/index.js"></script>
     <!--<script src="scripts/validate.js"></script>-->
+    <div class="profile__popup popup-confirm">
+      <div class="profile__overlay"></div>
+      <div class="profile__containerr">
+        <button class="profile__close"></button>
+
+        <form class="profile__form profile__form-confirm">
+          <h2 class="profile__title">¿Estás segura?</h2>
+          <button class="profile__save" type="submit">Sí</button>
+        </form>
+      </div>
+    </div>
   </body>
 </html>
